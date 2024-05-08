@@ -10,7 +10,7 @@ r = rate of interest as a percentage
 """
 
 def compoundInterest(P,r,t,n):
-    A =  P * ( 1 + (r*0.01/n)) ** (n*t)
+    A =  P * ( 1 + (r * 0.01 / n)) ** (n*t)
     A = round(A, 2)
     return A
 

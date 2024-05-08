@@ -27,17 +27,16 @@ def triangle(x, y, z):
     a = triangle[0]
     b = triangle[1]
     c = triangle[2]
-    if a ** 2 + b ** 2 == c ** 2:
-        return 2
+    if a + b < c:
+        return 0
     elif a ** 2 + b ** 2 < c ** 2:
         return 3
     elif a ** 2 + b ** 2 > c ** 2:
         return 1
-    else:
+    elif a ** 2 + b ** 2 == c ** 2:
+        return 2
+    else: 
         return 0
-    
-    
-    return
 
 def tests():
     assert triangle(12,5,13) == 2     

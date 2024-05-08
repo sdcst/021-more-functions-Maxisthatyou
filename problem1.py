@@ -22,6 +22,7 @@ def convertTemp(a, b):
         C = (a - 32) * (5/9)
         C = round(C, 2)
         return C
+    
 def tests():
     assert convertTemp(10,'C') == 50.00
     assert convertTemp(32,'F') == 0.00
