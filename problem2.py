@@ -21,7 +21,22 @@ assert triangle(1,1,4) == 0
 (2 points)
 """
 
-def triangle():
+def triangle(x, y, z):
+    triangle = [x, y, z]
+    triangle.sort()
+    a = triangle[0]
+    b = triangle[1]
+    c = triangle[2]
+    if a ** 2 + b ** 2 == c ** 2:
+        return 2
+    elif a ** 2 + b ** 2 < c ** 2:
+        return 3
+    elif a ** 2 + b ** 2 > c ** 2:
+        return 1
+    else:
+        return 0
+    
+    
     return
 
 def tests():
